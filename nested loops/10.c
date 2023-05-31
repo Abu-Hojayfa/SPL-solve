@@ -8,16 +8,18 @@ int main()
 
   for (int i = 0; i < a; i++)
   {
-    for (int j = 1; j < a - i; j++)
+    for (int j = a - i; j > 1; j--)
     {
       printf("_");
     }
+
     for (int k = 0; k <= i; k++)
     {
-      printf("%d", i+1);
+      printf("*");
     }
 
     printf("\n");
   }
+
   return 0;
 }
