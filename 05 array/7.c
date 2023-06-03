@@ -1,12 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <time.h>
-
 int main()
 {
-  clock_t begin = clock();
-
   int a;
   scanf("%d", &a);
 
@@ -22,8 +18,5 @@ int main()
     printf("%d ", arr[i]);
   }
 
-  clock_t end = clock();
-  double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-  printf("\n%g sec\n", time_spent);
   return 0;
 }
