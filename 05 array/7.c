@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include <time.h>
+
+int main()
+{
+  clock_t begin = clock();
+
+  int a;
+  scanf("%d", &a);
+
+  int arr[a];
+
+  for (int i = 0; i < a; i++)
+  {
+    scanf("%d", &arr[i]);
+  }
+
+  for (int i = a - 1; i >= 0; i--)
+  {
+    printf("%d ", arr[i]);
+  }
+
+  clock_t end = clock();
+  double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+  printf("\n%g sec\n", time_spent);
+  return 0;
+}
