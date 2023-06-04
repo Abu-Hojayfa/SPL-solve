@@ -10,8 +10,8 @@ int main()
   printf("Addition: %g\n", a + b);
   printf("Subtraction: %g\n", a - b);
   printf("Multiplication: %g\n", a * b);
-  printf("Quotient: %d\n", (int)(a / b));    // decimal e vhag korar jonno
-  printf("Reminder: %i\n", (int)a % (int)b); // cause float er mod hoi na // example 2 er uttor may vul
+  printf("Quotient: %d\n", (int)(a / b));    
+  printf("Reminder: %i\n", (int)a % (int)b); 
 
   return 0;
 }
