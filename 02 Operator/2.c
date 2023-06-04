@@ -9,7 +9,7 @@ int main()
   float a;
   scanf("%f", &a);
 
-  printf("Area: %g", 2 * pi * a);
+  printf("Area: %g", 2 * PI * a);
 
   return 0;
 }

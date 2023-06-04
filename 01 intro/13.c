@@ -6,7 +6,7 @@
 int main()
 {
 
-  printf("The value of Pi = %g\n", pi);
+  printf("The value of Pi = %g\n", PI);
   printf("The value of golden ratio = %g\n", gr);
 
   return 0;
