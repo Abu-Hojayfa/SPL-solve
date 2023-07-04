@@ -4,23 +4,23 @@
 int main()
 {
 
-  int a;
+  int a, count = 0;
   scanf("%d", &a);
 
-  int arr[a];
+  char arr[a];
 
   for (int i = 0; i < a; i++)
   {
-    scanf("%s", &arr[i]);
+    scanf("%c", &arr[i]);
   }
 
   for (int i = 0; i < a; i++)
   {
-    if (arr[i] == 'a' || arr[i] == 'e' || arr[i] == a || arr[i] == a || arr[i] == a)
-    {
-      /* code */
-    }
+    if (arr[i] == 'A' || arr[i] == 'E' || arr[i] == 'I' || arr[i] == 'O' || arr[i] == 'U')
+      count++;
   }
+
+  printf("count: %d", count);
 
   return 0;
 }
